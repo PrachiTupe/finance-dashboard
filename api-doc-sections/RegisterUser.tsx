@@ -7,7 +7,7 @@ export default function RegisterUser() {
     <ApiSection
       title="Register new User with new email"
       description="Use this endpoint to create a new user account. Provide name, email, and password. Email should be completely new"
-      endpoint="http://localhost:5000/api/auth/register"
+      endpoint="/auth/register"
       method="POST"
       defaultBody={JSON.stringify(
         {

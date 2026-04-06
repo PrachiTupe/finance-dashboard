@@ -7,7 +7,7 @@ export default function RegisterUser() {
     <ApiSection
       title="Register new User with exsting email"
       description="If exsting email is used, it will return message 'Email already exists'"
-      endpoint="http://localhost:5000/api/auth/register"
+      endpoint="/auth/register"
       method="POST"
       defaultBody={JSON.stringify(
         {

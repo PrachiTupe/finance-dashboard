@@ -7,7 +7,7 @@ export default function LoginUser2() {
     <ApiSection
       title="Login with non existent email"
       description="If login email doesn't exist, it returns 'user not found'"
-      endpoint="http://localhost:5000/api/auth/login"
+      endpoint="/auth/login"
       method="POST"
       defaultBody={JSON.stringify(
         {

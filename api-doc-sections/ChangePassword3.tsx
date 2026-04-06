@@ -7,7 +7,7 @@ export default function ChangePassword3() {
     <ApiSection
       title="Change Password - user not Found"
       description="If the user is not found, it returns 'User not found'"
-      endpoint="http://localhost:5000/api/auth/change-password"
+      endpoint="/auth/change-password"
       method="PUT"
       defaultBody={JSON.stringify(
         {

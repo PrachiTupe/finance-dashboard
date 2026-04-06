@@ -7,7 +7,7 @@ export default function ChangePassword() {
     <ApiSection
       title="Change Password - Old Password Incorrect"
       description="If old password is incorrect, it returns 'Old password is incorrect'"
-      endpoint="http://localhost:5000/api/auth/change-password"
+      endpoint="/auth/change-password"
       method="PUT"
       defaultBody={JSON.stringify(
         {

@@ -7,7 +7,7 @@ export default function ChangePassword() {
     <ApiSection
       title="Change Password - Current password and old password are same"
       description="If new password is the same as the old password, it returns 'New password cannot be the same as old password'"
-      endpoint="http://localhost:5000/api/auth/change-password"
+      endpoint="/auth/change-password"
       method="PUT"
       defaultBody={JSON.stringify(
         {

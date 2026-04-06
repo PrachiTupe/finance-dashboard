@@ -7,7 +7,7 @@ export default function LoginUser() {
     <ApiSection
       title="Successful Login"
       description="Use this endpoint to login a user with email and password. Returns an authentication token on success."
-      endpoint="https://backend-assessment-v7ej.onrender.com/api/auth/login"
+      endpoint="/auth/login"
       method="POST"
       defaultBody={JSON.stringify(
         {

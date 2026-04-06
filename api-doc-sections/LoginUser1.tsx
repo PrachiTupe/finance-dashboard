@@ -7,7 +7,7 @@ export default function LoginUser1() {
     <ApiSection
       title="Login with Invalid Password"
       description="If login password is wrong, it returns 'Invalid Password'"
-      endpoint="http://localhost:5000/api/auth/login"
+      endpoint="/auth/login"
       method="POST"
       defaultBody={JSON.stringify(
         {

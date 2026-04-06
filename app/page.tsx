@@ -21,6 +21,16 @@ import GetAllTransaction1 from "@/api-doc-sections/GetAllTransaction1";
 import GetAllTransaction2 from "@/api-doc-sections/GetAllTransaction2";
 import GetAllTransaction3 from "@/api-doc-sections/GetAllTransaction3";
 import CreateTransaction1 from "@/api-doc-sections/CreateTransaction1";
+import AddViewer1 from "@/api-doc-sections/AddViewer1";
+import AddViewer2 from "@/api-doc-sections/AddViewer2";
+import GetViewer2 from "@/api-doc-sections/GetViewers2";
+import GetCategorySummary1 from "@/api-doc-sections/GetCategorySummary1";
+import GetCategorySummary2 from "@/api-doc-sections/GetCategorySummary2";
+import GetCategorySummary3 from "@/api-doc-sections/GetCategorySummary3";
+import { Cat } from "lucide-react";
+import CategorySummaryByUser1 from "@/api-doc-sections/CategorySummaryByUser1";
+import CategorySummaryByUser2 from "@/api-doc-sections/CategorySummaryByUser2";
+import AssignedUsersForViewer from "@/api-doc-sections/AssignedUsersforViewers";
 
 // Import all your section components
 
@@ -33,6 +43,9 @@ export default function ApiDocsPage() {
         API Documentation Playground
       </h1>
 
+      <h1 className="text-center mb-8 text-4xl font-bold text-black">
+        Authentication APIs
+      </h1>
       
       <RegisterUser />
       <RegisterUser1 />
@@ -49,24 +62,61 @@ export default function ApiDocsPage() {
       <GetMyInfo />
 
 
-
+      <h1 className="text-center mb-8 text-4xl font-bold text-black">
+        User Access APIs
+      </h1>
 
       <GetAllTransaction />
-      <GetAllTransaction1 />
-      <GetAllTransaction2 /> 
-      <GetAllTransaction3 />
-
-
       <CreateTransaction />
-      <CreateTransaction1 />
-
-
-
       <AddViewer />
+      <AddViewer1 />
+      <AddViewer2 />
       <GetViewers />
       <GetSummary />
       <GetCategorySummary />
+
+
+
+
+
+
+      <h1 className="text-center mb-8 text-4xl font-bold text-black">
+        Viewer Access APIs
+      </h1>
+
+      <GetAllTransaction1 />
+      <CreateTransaction1 />
+      <GetCategorySummary1 />
+      <CategorySummaryByUser2 />
+      <AssignedUsersForViewer />
+      
+      
+
+
+
+
+      <h1 className="text-center mb-8 text-4xl font-bold text-black">
+        Manager Access APIs
+      </h1>
+
+      <GetAllTransaction2 /> 
+      <CreateTransaction1 />
+      <GetViewer2 />
+      <GetCategorySummary2 />
+      <CategorySummaryByUser1 />
+
+
+
+
+      <h1 className="text-center mb-8 text-4xl font-bold text-black">
+        Admin Access APIs
+      </h1>
+
+      <GetAllTransaction3 />
+      <CreateTransaction1 />
+      <GetCategorySummary3 />
       <CategorySummaryByUser />
+
 
 
     </div>

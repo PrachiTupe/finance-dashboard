@@ -7,7 +7,7 @@ export default function ChangePassword() {
     <ApiSection
       title="Change Password Successfully"
       description="Use this endpoint to change a user's password. Provide oldPassword and newPassword."
-      endpoint="http://localhost:5000/api/auth/change-password"
+      endpoint="/auth/change-password"
       method="PUT"
       defaultBody={JSON.stringify(
         {
