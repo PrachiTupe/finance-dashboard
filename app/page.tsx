@@ -31,6 +31,14 @@ import { Cat } from "lucide-react";
 import CategorySummaryByUser1 from "@/api-doc-sections/CategorySummaryByUser1";
 import CategorySummaryByUser2 from "@/api-doc-sections/CategorySummaryByUser2";
 import AssignedUsersForViewer from "@/api-doc-sections/AssignedUsersforViewers";
+import GetAllUsers from "@/api-doc-sections/GetAllUsers";
+import GetUsersWithoutManager from "@/api-doc-sections/GetUsersWithoutManager";
+import CreateManager from "@/api-doc-sections/CreateManager";
+import AssignManager1 from "@/api-doc-sections/AssignManager1";
+import AssignManager from "@/api-doc-sections/AssignManager";
+import GetAllManagers from "@/api-doc-sections/GetAllManagers";
+import GetManagersWithUsers from "@/api-doc-sections/GetManagersWithUsers";
+import SearchUsers from "@/api-doc-sections/SearchUsers";
 
 // Import all your section components
 
@@ -116,9 +124,17 @@ export default function ApiDocsPage() {
       <CreateTransaction1 />
       <GetCategorySummary3 />
       <CategorySummaryByUser />
+      <GetAllUsers />
+      <GetUsersWithoutManager />
+      <CreateManager />
+      <AssignManager /> 
+      <AssignManager1 />
+      <GetAllManagers />
+      <GetManagersWithUsers />
+      <SearchUsers />  
 
 
 
-    </div>
+    </div>    
   );
 }
