@@ -78,6 +78,20 @@ export default function ApiDocsPage() {
 
 <ul className="text-sm text-gray-700 space-y-2 list-disc pl-5">
 
+
+
+  {/* Security */}
+  <li>JWT-based authentication for secure API access</li>
+  <li>Role-based protected routes with proper authorization</li>
+  <li>Rate limiting applied on login (5 requests per minute)</li>
+
+  {/* Validation and extras */}
+  <li>Soft delete feature implementation  just for transactions</li>
+  <li>Input validation for user registration</li>
+  <li>Pagination implemented for transaction APIs</li>
+  <li>Search functionality for admin to find users</li>
+  <li>Proper HTTP status codes including forbidden access handling</li>
+
   {/* Roles */}
   <li>Role-based system: User, Viewer, Manager, Admin</li>
 
@@ -104,17 +118,6 @@ export default function ApiDocsPage() {
   <li>
     Admin can assign managers to viewers, manage users, and monitor unassigned accounts
   </li>
-
-  {/* Security */}
-  <li>JWT-based authentication for secure API access</li>
-  <li>Role-based protected routes with proper authorization</li>
-  <li>Rate limiting applied on login (5 requests per minute)</li>
-
-  {/* Validation and extras */}
-  <li>Input validation for user registration</li>
-  <li>Pagination implemented for transaction APIs</li>
-  <li>Search functionality for admin to find users</li>
-  <li>Proper HTTP status codes including forbidden access handling</li>
 
 </ul>
   </div>
