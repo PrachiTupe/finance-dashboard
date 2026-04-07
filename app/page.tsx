@@ -47,6 +47,80 @@ import SearchUsers from "@/api-doc-sections/SearchUsers";
 export default function ApiDocsPage() {
   return (
     <div style={{ padding: "2rem", maxWidth: "1200px", margin: "0 auto" }}>
+
+      <div className="grid md:grid-cols-2 gap-8 items-center mb-10">
+
+  {/* LEFT SIDE */}
+  <div>
+    <h2 className="text-xl font-semibold mb-3">
+      Project Overview
+    </h2>
+
+    <p className="text-sm text-gray-700 mb-4 leading-relaxed">
+      This project is built as a backend-focused assessment for Zorvyn.
+      It demonstrates a role-based finance management system with multiple APIs.
+      Users can manage transactions, view summaries, and control access for viewers and managers.
+      The platform showcases secure, scalable backend architecture with real-world features.
+    </p>
+
+    <img
+      src="/explain.png"
+      alt="Project Explanation"
+      className="rounded-lg shadow-md w-full"
+    />
+  </div>
+
+  {/* RIGHT SIDE */}
+  <div>
+    <h2 className="text-xl font-semibold mb-3">
+      Key Features
+    </h2>
+
+<ul className="text-sm text-gray-700 space-y-2 list-disc pl-5">
+
+  {/* Roles */}
+  <li>Role-based system: User, Viewer, Manager, Admin</li>
+
+  {/* User capabilities */}
+  <li>
+    User can create, update, delete, and filter transactions
+  </li>
+  <li>
+    User can view summaries: net balance, income, expenses, category-wise
+  </li>
+  <li>
+    User can add multiple viewers to allow read-only access to their transactions
+  </li>
+
+  {/* Viewer/Manager capabilities */}
+  <li>
+    Viewer can see transactions of users who added them and view summaries
+  </li>
+  <li>
+    Manager can view and analyze transactions of assigned users
+  </li>
+
+  {/* Admin capabilities */}
+  <li>
+    Admin can assign managers to viewers, manage users, and monitor unassigned accounts
+  </li>
+
+  {/* Security */}
+  <li>JWT-based authentication for secure API access</li>
+  <li>Role-based protected routes with proper authorization</li>
+  <li>Rate limiting applied on login (5 requests per minute)</li>
+
+  {/* Validation and extras */}
+  <li>Input validation for user registration</li>
+  <li>Pagination implemented for transaction APIs</li>
+  <li>Search functionality for admin to find users</li>
+  <li>Proper HTTP status codes including forbidden access handling</li>
+
+</ul>
+  </div>
+
+</div>
+
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>
         API Documentation Playground
       </h1>
