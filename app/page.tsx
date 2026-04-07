@@ -39,6 +39,13 @@ import AssignManager from "@/api-doc-sections/AssignManager";
 import GetAllManagers from "@/api-doc-sections/GetAllManagers";
 import GetManagersWithUsers from "@/api-doc-sections/GetManagersWithUsers";
 import SearchUsers from "@/api-doc-sections/SearchUsers";
+import UpdateTransaction from "@/api-doc-sections/UpdateTransaction";
+import UpdateTransaction1 from "@/api-doc-sections/UpdateTransaction1";
+import DeleteTransaction from "@/api-doc-sections/DeleteTransacion";
+import DeleteTransaction1 from "@/api-doc-sections/DeleteTransacion1";
+import PaginatedTransaction from "@/api-doc-sections/PagintedTransaction";
+import GetDeletedTransactionsAdmin from "@/api-doc-sections/GetDeletedTransactionsAdmin";
+import GetDeletedTransactionsManager from "@/api-doc-sections/GetDeletedTransactionsManager";
 
 // Import all your section components
 
@@ -159,6 +166,11 @@ export default function ApiDocsPage() {
       <GetViewers />
       <GetSummary />
       <GetCategorySummary />
+      <UpdateTransaction />
+      <UpdateTransaction1 />
+      <DeleteTransaction />
+      <DeleteTransaction1 />
+      <PaginatedTransaction />
 
 
 
@@ -186,6 +198,7 @@ export default function ApiDocsPage() {
 
       <GetAllTransaction2 /> 
       <CreateTransaction1 />
+      <GetDeletedTransactionsManager />
       <GetViewer2 />
       <GetCategorySummary2 />
       <CategorySummaryByUser1 />
@@ -199,6 +212,7 @@ export default function ApiDocsPage() {
 
       <GetAllTransaction3 />
       <CreateTransaction1 />
+      <GetDeletedTransactionsAdmin />
       <GetCategorySummary3 />
       <CategorySummaryByUser />
       <GetAllUsers />
