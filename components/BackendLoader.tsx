@@ -71,7 +71,7 @@ export default function BackendLoader(): JSX.Element | null {
         setSeconds(60);
         setIndex(0);
       }
-    }, 15000);
+    }, 60000);
 
     return () => clearInterval(interval);
   }, [serverLive]);
